@@ -149,8 +149,7 @@ header nav ul li a {
     grid-column-end: 3;
     grid-row-start: 1; 
     grid-row-end: 3;
-    display: flex;
-    align-items: flex-start;
+    background-image: url(../images/run-buddy.JPG)
 }
 
 h3, h4 {
@@ -164,8 +163,15 @@ h4 {
     margin-bottom: 20px;
 }
 
+.two, .three, .four, .five {
+    background-image: url(../images/placeholder.jpg)
+}
+
 .two h4, .three h4, .four h4, .five h4 {
     margin-bottom: 10px;
+}
+.grid a {
+   opacity: 0;
 }
 
 /*Work End*/
@@ -195,6 +201,6 @@ h4 {
 .contact-right a {
     border-bottom: thick solid var(--secondary-color);
     margin: 0 5px;
-    font-size: .75vw;
+    font-size: 1vw;
 }
 
