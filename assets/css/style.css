@@ -50,6 +50,7 @@ header nav ul li a {
     color: var(--tertiary-color);
     font-size: .75vw;
     padding: 15px 10px;
+    text-decoration: none;
     border-bottom: thick solid var(--tertiary-color);
     margin: 0 5px;
 }
@@ -85,38 +86,90 @@ header nav ul li a {
 /*About Me Start*/
 .flex-about {
     display: flex; 
-    margin: 25px 5%;
+    margin-top: 50px;
+}
+
+.about-left {
+    margin-left: 160px;
     text-align: right;
 }
 
-p {
-    width: 90%;
+.about-right {
+    width: 80%;
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: left;
+    border-left: thick solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+/*About Me End*/
+
+/*Work Start*/ 
+
+.flex-work {
+    display: flex;
+}
+
+.work-left {
+    margin-left: 175px;
+    text-align: right;
+}
+
+.work-right {
+    display: grid; 
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 150px 150px 150px;
+    width: 80%;
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: left;
+    border-left: thick solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    
+}
+
+.grid {
+    width: 500px;
+    height: 200px;
+    background-color: var(--secondary-color);
+    border: thick solid var(--tertiary-color); 
+    color: var(--tertiary-color)
+
+}
+
+h3 {
+    font-weight: bold;
+}
+
+/*Work End*/
+
+/*Contact Me*/ 
+.flex-contact {
+    display: flex; 
+}
+
+.contact-left {
+    margin-left: 130px;
+    text-align: right;
+}
+
+.contact-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
     margin-left: 20px;
     padding-left: 20px;
     text-align: left;
     border-left: thick solid var(--secondary-color);
     color: var(--secondary-color);
 }
-/*About Me End*/
 
-/*Contact Me*/ 
-.flex-contact {
-    display: flex;
-}
-
-.flex-contact-secondary {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    color: var(--secondary-color); 
-    border-left: thick solid var(--secondary-color);
-    margin-left: 20px;
-}
-
-.flex-contact-secondary a {
+.contact-right a {
     border-bottom: thick solid var(--secondary-color);
     margin: 0 5px;
     font-size: .75vw;
-    width: 100%;
 }
 
