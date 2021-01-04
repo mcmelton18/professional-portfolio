@@ -104,8 +104,19 @@ p {
     display: flex;
 }
 
-.flex-secondary-contact {
+.flex-contact-secondary {
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-around;
+    list-style: none;
+    color: var(--secondary-color); 
+    border-left: thick solid var(--secondary-color);
+    margin-left: 20px;
 }
+
+.flex-contact-secondary a {
+    border-bottom: thick solid var(--secondary-color);
+    margin: 0 5px;
+    font-size: .75vw;
+    width: 100%;
+}
+
