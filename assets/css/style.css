@@ -48,7 +48,7 @@ header nav ul {
 
 header nav ul li a {
     color: var(--tertiary-color);
-    font-size: .75vw;
+    font-size: 15px;
     padding: 15px 10px;
     text-decoration: none;
     border-bottom: thick solid var(--tertiary-color);
@@ -71,6 +71,8 @@ header nav ul li a {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
     margin: 20px 40px;
+    padding: 10px;
+    font-size: 15px;
 }
 /*Jumbotron End*/ 
 
@@ -129,8 +131,8 @@ header nav ul li a {
 .grid-container {
     display: grid;
     width: 70%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 300px 300px 300px;
     grid-gap: 20px 20px
    
 }
@@ -152,6 +154,10 @@ header nav ul li a {
     background-image: url(../images/run-buddy.JPG)
 }
 
+.two, .three, .four, .five {
+    background-image: url(../images/placeholder.jpg)
+}
+
 h3, h4 {
     width: 120px;
     color: var(--secondary-color);
@@ -161,10 +167,6 @@ h3, h4 {
 
 h4 {
     margin-bottom: 20px;
-}
-
-.two, .three, .four, .five {
-    background-image: url(../images/placeholder.jpg)
 }
 
 .two h4, .three h4, .four h4, .five h4 {
@@ -178,7 +180,8 @@ h4 {
 
 /*Contact Me*/ 
 .flex-contact {
-    display: flex; 
+    display: flex;
+    margin-bottom: 50px; 
 }
 
 .contact-left {
