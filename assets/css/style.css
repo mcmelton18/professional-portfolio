@@ -58,7 +58,7 @@ header nav ul li a {
 
 /*Jumbotron Start*/
 .background { 
-    height: 500px;
+    height: 100%;
     background-image: url("../images/Banner.jpg");
     background-size: cover;
     display: flex;
@@ -70,7 +70,7 @@ header nav ul li a {
 .background-subtitle {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
-    margin: 20px 40px;
+    margin: 20% 1% 1% auto;
     padding: 10px;
     font-size: 15px;
 }
@@ -92,8 +92,10 @@ header nav ul li a {
 }
 
 .about-left {
-    margin-left: 160px;
+    margin-left: 5%;
     text-align: right;
+    width: 150px;
+    height: 50px;
 }
 
 .about-right {
@@ -114,8 +116,10 @@ header nav ul li a {
 }
 
 .work-left {
-    margin-left: 175px;
+    margin-left: 5%;
     text-align: right;
+    width: 150px;
+    height: 50px;
 }
 
 .work-right {
@@ -185,8 +189,10 @@ h4 {
 }
 
 .contact-left {
-    margin-left: 130px;
+    margin-left: 5%;
     text-align: right;
+    width: 150px;
+    height: 50px;
 }
 
 .contact-right {
@@ -204,6 +210,55 @@ h4 {
 .contact-right a {
     border-bottom: thick solid var(--secondary-color);
     margin: 0 5px;
-    font-size: 1vw;
+    font-size: 15px;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .grid-container {
+        grid-template-rows: 150px 150px 150px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-right, .work-right, .contact-right {
+        width: 60%;
+    }
+
+
+    header {
+        width: 770px;
+    }
+
+    .background {
+        width: 770px;
+    }
+
+    .background-subtitle {
+        margin-right: 2%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .work-right {
+        margin-right: 3%;
+    }
+
+    .about-right {
+        margin-right: 7%;
+    }
+
+    .contact-right {
+        margin-right: 3%;
+    }
+} 
+
+@media screen and (max-width: 575px) {
+    .contact-right {
+        margin-right: 3%;
+    }
+}
+   
