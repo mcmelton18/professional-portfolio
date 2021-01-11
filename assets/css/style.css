@@ -74,6 +74,10 @@ header nav ul li a {
     padding: 10px;
     font-size: 15px;
 }
+
+.photo {
+    padding: 10px
+}
 /*Jumbotron End*/ 
 
 /*Section Titles Styles*/
@@ -211,6 +215,7 @@ h4 {
     border-bottom: thick solid var(--secondary-color);
     margin: 0 5px;
     font-size: 15px;
+    text-decoration: none;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
